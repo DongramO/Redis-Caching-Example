@@ -1,0 +1,25 @@
+{
+  "name": "redis-caching-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "NODE_ENV=development NODE_PATH=src nodemon src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "koa": "^2.5.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.4.0",
+    "redis": "^2.8.0",
+    "redis-rejson": "^1.0.0",
+    "redis-scanner": "^0.1.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}

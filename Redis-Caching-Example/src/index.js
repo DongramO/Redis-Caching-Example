@@ -2,14 +2,16 @@
 const Koa = require('koa')
 const Router = require('koa-router')
 const bodyParser = require('koa-bodyparser')
-const moduels = require('./modules')
+const redis = require('lib/redis')
+const test = require('./api')
 
 const router = new Router()
 const app = new Koa()
 
 // Koa Configure
 app.use(bodyParser())
-router.use('/elk', moduels.routes())
+
+router.use('/test', test.routes())
 
 app.use(router.allowedMethods())
 app.use(router.routes())
